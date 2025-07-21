@@ -52,3 +52,21 @@ Parameters:
 <img width="292" height="101" alt="Image" src="https://github.com/user-attachments/assets/db2fed44-8692-4bd9-aaa2-d6b18d19aa7e" />
 <br>
 <img width="335" height="38" alt="Image" src="https://github.com/user-attachments/assets/5d96267a-1fb7-48e4-85e7-07d1c049c9ed" />
+<br>
+<img width="514" height="83" alt="Image" src="https://github.com/user-attachments/assets/ef838b81-22eb-4beb-ba30-dc841260419a" />
+<br>
+
+# %attr_in
+Purpose:        Reapply extended attributes listed in the xattrs dataset to datasets/variables.
+ ~~~text
+Parameters:
+  ds        - Name of the dataset containing the extended attributes (typically 'xattrs')
+Variables required for the read data set are [libname],[ds],[var],[xattr],[xtype],[xvalue]
+~~~
+Usage Example:
+ ~~~sas
+%xattr_in(ds=xattrs);
+~~~
+<img width="514" height="83" alt="Image" src="https://github.com/user-attachments/assets/ef838b81-22eb-4beb-ba30-dc841260419a" />
+<br>
+
