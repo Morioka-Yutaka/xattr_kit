@@ -90,7 +90,7 @@ Output:         Creates macro variables in the global symbol table with correspo
 <img width="289" height="39" alt="Image" src="https://github.com/user-attachments/assets/44041d05-5e81-433a-836e-e3fca03204de" />
 
 # version history
-0.1.0(22Jyly2025): Initial version
+0.1.0(22July2025): Initial version
 
 ## What is SAS Packages?  
 The package is built on top of **SAS Packages framework(SPF)** developed by Bartosz Jablonski.
