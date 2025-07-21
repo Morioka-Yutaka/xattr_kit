@@ -56,7 +56,7 @@ Parameters:
 <img width="514" height="83" alt="Image" src="https://github.com/user-attachments/assets/ef838b81-22eb-4beb-ba30-dc841260419a" />
 <br>
 
-# %attr_in
+# %xattr_in
 Purpose:        Reapply extended attributes listed in the xattrs dataset to datasets/variables.
  ~~~text
 Parameters:
