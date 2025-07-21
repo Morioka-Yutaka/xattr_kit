@@ -64,9 +64,26 @@ Parameters:
 Variables required for the read data set are [libname],[ds],[var],[xattr],[xtype],[xvalue]
 ~~~
 Usage Example:
- ~~~sas
+~~~sas
 %xattr_in(ds=xattrs);
 ~~~
 <img width="514" height="83" alt="Image" src="https://github.com/user-attachments/assets/ef838b81-22eb-4beb-ba30-dc841260419a" />
 <br>
 <img width="438" height="103" alt="Image" src="https://github.com/user-attachments/assets/96244bea-d64a-4d13-98c9-d087da143cbf" />
+
+# %xattr2macrovar
+Purpose:        Convert extended attribute values into global macro variables.
+ ~~~text
+Parameters:
+  lib              - Library name (default = WORK)
+  ds               - Dataset name
+  xattr_name       - Specific attribute name to extract (optional)
+  macro_name_type  - Naming convention for macro variables. Options:
+                    "libname_ds_var_xattr", "ds_var_xattr", "var_xattr", "xattr"
+                    Default = "ds_var_xattr"
+~~~
+Output:         Creates macro variables in the global symbol table with corresponding values. <br>
+ Usage Example:
+~~~sas
+%xattr2macrovar(lib=WORK)
+~~~
