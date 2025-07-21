@@ -87,3 +87,36 @@ Output:         Creates macro variables in the global symbol table with correspo
 ~~~sas
 %xattr2macrovar(lib=WORK)
 ~~~
+<img width="289" height="39" alt="Image" src="https://github.com/user-attachments/assets/44041d05-5e81-433a-836e-e3fca03204de" />
+
+# version history
+0.1.0(22Jyly2025): Initial version
+
+## What is SAS Packages?  
+The package is built on top of **SAS Packages framework(SPF)** developed by Bartosz Jablonski.
+For more information about SAS Packages framework, see [SAS_PACKAGES](https://github.com/yabwon/SAS_PACKAGES).  
+You can also find more SAS Packages(SASPACs) in [SASPAC](https://github.com/SASPAC).
+
+## How to use SAS Packages? (quick start)
+### 1. Set-up SPF(SAS Packages Framework)
+Firstly, create directory for your packages and assign a fileref to it.
+~~~sas      
+filename packages "\path\to\your\packages";
+~~~
+Secondly, enable the SAS Packages Framework.  
+(If you don't have SAS Packages Framework installed, follow the instruction in [SPF documentation](https://github.com/yabwon/SAS_PACKAGES/tree/main/SPF/Documentation) to install SAS Packages Framework.)  
+~~~sas      
+%include packages(SPFinit.sas)
+~~~  
+### 2. Install SAS package  
+Install SAS package you want to use using %installPackage() in SPFinit.sas.
+~~~sas      
+%installPackage(packagename, sourcePath=\github\path\for\packagename)
+~~~
+(e.g. %installPackage(ABC, sourcePath=https://github.com/XXXXX/ABC/raw/main/))  
+### 3. Load SAS package  
+Load SAS package you want to use using %loadPackage() in SPFinit.sas.
+~~~sas      
+%loadPackage(packagename)
+~~~
+### Enjoy😁
