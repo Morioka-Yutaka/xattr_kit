@@ -49,3 +49,4 @@ Parameters:
  ~~~sas
  %list_xattr()
 ~~~
+<img width="292" height="101" alt="Image" src="https://github.com/user-attachments/assets/db2fed44-8692-4bd9-aaa2-d6b18d19aa7e" />
