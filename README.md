@@ -13,8 +13,8 @@ Parameters:
   xname     - Name of the extended attribute
   xvalue    - Value of the extended attribute
 ~~~
-~~~sas  
  Usage Example:
+~~~sas  
   %xattr_set_var(ds=a, var=x, xname=xa1, xvalue="xxxx");
   %xattr_set_var(ds=a, var=x, xname=xa2, xvalue=1111);
   %xattr_set_var(ds=a, var=y, xname=ya1, xvalue="yyyy");
@@ -22,12 +22,14 @@ Parameters:
 
 # %xattr_set_ds
 Purpose:        Assign an extended attribute to a dataset.
-Parameters:
 ~~~text
+Parameters:
   lib       - Library name where the dataset resides (default = WORK)
   ds        - Dataset name
   xname     - Name of the extended attribute
   xvalue    - Value of the extended attribute
 ~~~
  Usage Example:
+~~~sas
  %xattr_set_ds(ds=a,  xname=xds_a1, xvalue="ds attr 1");
+~~~
