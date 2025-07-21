@@ -33,3 +33,19 @@ Parameters:
 ~~~sas
  %xattr_set_ds(ds=a,  xname=xds_a1, xvalue="ds attr 1");
 ~~~
+
+# %list_xattr
+ Purpose:       List of attributes printed and/or logged; results stored in xattrs dataset.
+ ~~~text
+ Parameters:
+   lib           - (Optional) Library name to filter the results
+   ds            - (Optional) Dataset name to filter the results
+   cat           - (Optional) Category (VARIABLE or DATASET) to filter
+   xattr_name    - (Optional) Specific extended attribute name to filter
+   display_ods   - (Y/N) Whether to print the result table using PROC PRINT (default = Y)
+   put_log       - (Y/N) Whether to output results to log via PUT statement (default = Y)
+~~~
+ Usage Example:
+ ~~~sas
+ %list_xattr()
+~~~
