@@ -1,7 +1,6 @@
 # xattr_kit
 xattr_kit is a package to simplify the management of SAS extended attributes  
 <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/77301605-27e7-4e1b-b0ae-0b3d1dfc255f" /> 
-
 # %xattr_set_var
 Purpose:        Assign an extended attribute to a variable.
 ~~~text  
